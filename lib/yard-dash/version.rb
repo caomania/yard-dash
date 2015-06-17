@@ -7,5 +7,5 @@
 module YardDashVersion
   #
   # @return [String] The application version number
-  NUMBER = "1.0"
+  NUMBER = "1.0.1"
 end

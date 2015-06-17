@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = YardDashVersion::NUMBER
   s.author      = "Fred Appelman"
   s.date        = Time.now.strftime("%Y-%m-%d")
-  s.license     = "(c) Fred Appelman"
+  s.license     = "(c) MIT"
   s.homepage    = "http://fred.appelman.net"
   s.description = "Yard-dash generates a docset for Dash"
   s.summary     = "Generate beside the standard HTML documentation
