@@ -1,0 +1,7 @@
+syntax: glob
+*.gem
+*.sublime-workspace
+syntax: regexp
+^.yardoc
+doc/
+yard-dash.sublime-project
