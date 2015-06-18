@@ -1,6 +1,10 @@
 # yard-dash
 
-This `yard` plugin will generate a `Dash` **dockset** in addition to the normal HTML directory for a gem. The HTML code is copied from the standard yard source and is unchanged.
+This `yard` plugin will generate a `Dash` **dockset** for a *Gem* in addition to the normal `HTML` *doc* directory. 
+
+This plugin piggybacks on the standard `HTML` generation code from `Yard` by injecting a callback that will take care of the generation. 
+
+Just for the record the original code in `Yard` is unchanged.
 
 ## Installation
 
@@ -20,7 +24,18 @@ Or install it yourself as:
 
 ## Usage
 
-Just run `yardoc` and the **dockset** will be created on top off the standard HTML tree.
-The name of the gem inside **dockset** will be defined by the name inside the `gemspec` file.
+Just run `yardoc` and the **dockset** will be created in addition to the standard HTML tree in the `doc` directory.
+
+The **dockset** will get the same name as the *name* in the `gemspec`.
+
+
+```ruby
+Gem::Specification.new do |s|
+  s.name = 'gemexample'
+  ...
+end
+```
+
+Given the above specification the **dockset** will get the name `gemexample.docset`.
 
 
