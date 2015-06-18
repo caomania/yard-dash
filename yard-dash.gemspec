@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.author      = "Fred Appelman"
   s.date        = Time.now.strftime("%Y-%m-%d")
   s.license     = "(c) MIT"
-  s.homepage    = "http://fred.appelman.net"
+  s.homepage    = "https://bitbucket.org/fappelman/yard-dash"
   s.description = "Yard-dash generates a docset for Dash"
   s.summary     = "Generate beside the standard HTML documentation
   a docset to be used by Dash from the standard yard inline
@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
   s.email       = "fred@appelman.net"
   s.files       = Dir['lib/**/*.rb'] + ['README.md']
   s.has_rdoc    = false
+  s.required_ruby_version = '~> 1.9.3'
 end
