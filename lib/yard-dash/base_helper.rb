@@ -193,6 +193,7 @@ module YardDashHelper
     # Add the methods, classes, modules and constants
     @@docset_data.each do |docset_element|
       @db.execute("insert into searchIndex (name, type, path) VALUES(?, ?, ?)",*docset_element)
+      FileUtils.cp path File.join(new_doc_path,"doc")
     end
   end
   private :write_docset
